@@ -1,0 +1,18 @@
+Collaborative Candy Crush
+
+Implementation of a collaborative and simplified variant the Candy Crush Saga game. Its gameplay makes intensive use of synchronous distributed collaborative dynamics.
+It is build using the Java programming language, along with the Qt Jambi framework (a port for Java of the Qt technology) and the ZeroC Ice networking middleware as the game foundations.
+
+Two teams, A and B, are set up, each one of them being composed of an indeterminate number of players. Both teams play according to a turn-based policy, as follows:
+
+ - A board of size 9x9 is set, having available six different types of fruits.
+ - Each team makes three movements in a turn.
+ - The figures which give points and make disappear the affected fruits are the following:
+    - Three matching fruits in vertical or horizontal arrangement (3 points)
+    - Four matching fruits in vertical or horizontal arrangement (5 points)
+    - Five matching fruits in vertical or horizontal arrangement (20 points)
+ - The players in a team must decide, by means of a democratic voting system, each one of the movements the team performs; the movements which features an absolute majority in the election will be selected. In case an agreement were not reached, the voting will be repeated.
+ - A communication channel (chat) enabled for the players in a team to discuss is featured.
+ - A shared scoreboard with both the partial and total score of each team is featured.
+ - The game finishes when any of the contestant teams reach a score of (or greater than) 100 points.
+
